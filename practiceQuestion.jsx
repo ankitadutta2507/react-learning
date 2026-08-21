@@ -83,6 +83,48 @@ function ProductCard(props) {
     </div>
   );
 }
+// Create an array: ******(Revise this q)
+// const products = [
+//  { id: 1, name: "Tomato", price: 40 },
+//  { id: 2, name: "Potato", price: 30 },
+//  { id: 3, name: "Carrot", price: 50 }
+// ];
+// Render all products using ProductCard.
+
+//App.jsx__
+import { ProductCard, products } from "./assets/components/Product";
+export default function App() {
+  return (
+    <div>
+      <ProductCard />
+    </div>
+  );
+}
+//Product.jsx----
+const products = [
+  { id: 1, name: "Tomato", price: 40 },
+  { id: 2, name: "Potato", price: 30 },
+  { id: 3, name: "Carrot", price: 50 },
+];
+
+export { products };
+
+export function ProductCard() {
+  return (
+    <>
+      {products.map((product) => (
+        <div key={product.id}>
+          <h1>{product.name}</h1>
+          <p>{product.price}</p>
+        </div>
+      ))}
+    </>
+  );
+}
+
+//___________________________________________________________________________________
+
+
 
 
 
