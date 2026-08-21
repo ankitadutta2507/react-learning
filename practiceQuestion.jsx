@@ -124,6 +124,30 @@ export function ProductCard() {
 
 //___________________________________________________________________________________
 
+// 5. Children Prop
+// Create:
+// <Card>
+//  <h2>Tomato</h2>
+//  <p>₹40/kg</p>
+// </Card>
+// Inside Card, render the content using children.
+//App.jsx--
+import { Card } from "./assets/components/Card";
+
+export default function App() {
+  return (
+    <Card>
+      <h2>Tomato</h2>
+      <p>₹40/kg</p>
+    </Card>
+  );
+}
+
+//Card.jsx
+
+export function Card({ children }) {
+  return <>{children}</>;
+}
 
 
 
