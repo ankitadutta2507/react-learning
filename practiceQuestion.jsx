@@ -23,6 +23,66 @@ export default function App() {
 // ├── Main
 // └── Footer
 // Each should be a separate component.
+export default function App() {
+  return (
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  );
+}
+function Header() {
+  return (
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  );
+}
+function Main() {
+  return (
+    <>
+      <h1>App</h1>
+    </>
+  );
+}
+function Footer() {
+  return <div>© Ankita Dutta | 2026</div>;
+}
+// 3. Props
+//  Create a ProductCard component that receives:
+// name
+// price
+// category
+// and displays them.
+// Example:
+// <ProductCard
+//  name="Tomato"
+//  price={40}
+//  category="Vegetable"
+// />
+
+export default function App() {
+  return (
+    <div>
+      <ProductCard name="Tomato" price={40} category="vegetable" />
+      <ProductCard name="Potato" price={30} category="vegetable" />
+      <ProductCard name="Apple" price={120} category="Fruit" />
+    </div>
+  );
+}
+
+function ProductCard(props) {
+  return (
+    <div>
+      <h1>{props.name}</h1>
+      <p>{props.price}</p>
+      <p>{props.category}</p>
+    </div>
+  );
+}
 
 
 
