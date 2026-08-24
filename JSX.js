@@ -106,4 +106,36 @@ export default function App() {
 }
 //_____________________________________________________________________
 //14.
+export default function App() {
+  return <input disabled />;
+}
+//_____________________________________________________________________
+//15.
+export default function App() {
+  return <img src="logo.png" alt="GreenKart Logo" width={150} height={100} />;
+}
+//_____________________________________________________________________
+//16.In JSX, HTML's for attribute must be written as htmlFor.
+export default function App() {
+  return <label htmlFor="email">Email</label>;
+}
+//_____________________________________________________________________
 
+//17. 
+export default function App() {
+  return <h1 style={{ color: "red" }}>Hello</h1>;
+}
+//_____________________________________________________________________
+
+//18. 
+export default function App() {
+  return <h1 style={{ color: "green", fontSize: "30px" }}>GreenKart</h1>;
+}
+//_____________________________________________________________________
+//20.
+export default function App() {
+  return <img src="logo.png" />;
+}
+
+//_____________________________________________________________________
+//21.
