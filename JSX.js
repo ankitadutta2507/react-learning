@@ -139,3 +139,110 @@ export default function App() {
 
 //_____________________________________________________________________
 //21.
+export default function App() {
+  return (
+    <div>
+      <img src="product.jpg" />
+      <input type="text" />
+      <br />
+      <hr />
+    </div>
+  );
+}
+//_____________________________________________________________________
+//22.
+export default function App() {
+  const isLoggedIn = true;
+  return <div>{isLoggedIn ? "Welcome back" : "Please login"}</div>;
+}
+//_____________________________________________________________________
+//23.
+export default function App() {
+  const inStock = false;
+  return <div>{inStock ? "Available" : "Out of stock"}</div>;
+}
+//_____________________________________________________________________
+//24.
+export default function App() {
+  const age = 20;
+  return <div>{age >= 18 ? "Adult" : "Minor"}</div>;
+}
+//_____________________________________________________________________
+//25.
+export default function App() {
+  const isAdmin = true;
+  return <div>{isAdmin && "Admin Panel"}</div>;
+}
+//_____________________________________________________________________
+//26.
+export default function App() {
+  const fruits = ["Apple", "Mango", "Banana"];
+  return (
+    <div>
+      {fruits.map((fruit) => (
+        <p key={fruit}>{fruit}</p>
+      ))}
+    </div>
+  );
+}
+//_____________________________________________________________________
+//27.
+export default function App() {
+  const fruits = ["Apple", "Mango", "Banana"];
+  return (
+    <div>
+      <ul>
+        {fruits.map((fruit) => (
+          <li key={fruit}>{fruit}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+//_____________________________________________________________________
+//28.
+export default function App() {
+  const products = [
+    { id: 1, name: "Tomato", price: 40 },
+    { id: 2, name: "Potato", price: 30 },
+    { id: 3, name: "Carrot", price: 50 },
+  ];
+  return products.map((product) => (
+    <div key={product.id}>
+      <p>
+        {product.name}- ₹{product.price}
+      </p>
+    </div>
+  ));
+}
+//_____________________________________________________________________
+//29.
+export default function App() {
+  const products = [
+    { id: 1, name: "Tomato", price: 40 },
+    { id: 2, name: "Potato", price: 30 },
+    { id: 3, name: "Carrot", price: 50 },
+  ];
+  return products.map((product) => (
+    <div key={product.id}>
+      <p>{product.name}</p>
+      <p>₹{product.price}/Kg</p>
+    </div>
+  ));
+}
+//_____________________________________________________________________
+//30.
+export default function App() {
+  const products = [
+    { id: 1, name: "Tomato", price: 40 },
+    { id: 2, name: "Potato", price: 30 },
+    { id: 3, name: "Carrot", price: 50 },
+  ];
+  return products.map((product) => (
+    <div key={product.id}>
+      {/*This is the product section*/}
+      <p>{product.name}</p>
+      <p>₹{product.price}/Kg</p>
+    </div>
+  ));
+}
