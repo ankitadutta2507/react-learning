@@ -246,3 +246,78 @@ export default function App() {
     </div>
   ));
 }
+
+//_____________________________________________________________________
+//31.
+
+export default function App() {
+ 
+  return (
+    <div>
+      {/* Product section */}
+      <h1>Products</h1>
+    </div>
+  );
+}
+//_____________________________________________________________________
+//32.
+export default function App() {
+  return (
+    <>
+      <p>Products</p>
+      <p>Fresh vegetables</p>
+    </>
+  );
+}
+//_____________________________________________________________________
+//33.
+export default function App() {
+  return (
+    <>
+      <h1>Products</h1>
+      <p>Fresh vegetables</p>
+    </>
+  );
+}
+//_____________________________________________________________________
+//34.
+export default function App() {
+  return (
+    <div>
+      <h1>Hello</h1>
+      <img src="logo.png" />
+    </div>
+  );
+}
+//_____________________________________________________________________
+//35.
+export default function App() {
+  return (
+    <div className="card">
+      <h1>Tomato</h1>
+    </div>
+  );
+}
+//_____________________________________________________________________
+//36.
+export default function App() {
+  const name = "Ankita";
+  return <h1>Hello {name}</h1>;
+}
+//_____________________________________________________________________
+//37.
+export default function App() {
+  return <h1>{10 + 0}</h1>;
+}
+//_____________________________________________________________________
+//38.
+export default function App() {
+  return (
+    <div>
+      <h1>Products</h1>
+      <p>Fresh vegetables</p>
+
+      <footer>GreenKart</footer>
+    </div>
+  );
+}
