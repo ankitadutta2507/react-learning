@@ -321,3 +321,42 @@ export default function App() {
     </div>
   );
 }
+//____________________________________________________________________________
+//39.
+export default function App() {
+  const name = "Ankita Dutta";
+  const role = "Frontend Developer";
+  const skills = ["HTML", "CSS", "JavaScript", "React"];
+
+  return (
+    <div>
+      <h1>{name}</h1>
+      <h2>{role}</h2>
+      <h3>Skill</h3>
+      <ul>
+        {skills.map((skill) => (
+          <li key={skill}>{skill}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+//____________________________________________________________________________
+//40.
+export default function App() {
+  const productName = "Tomato";
+  const price = 40;
+  const description = "Fresh and organic";
+  const inStock = true;
+
+  return (
+    <div>
+      <h2>{productName}</h2>
+      <p>₹{price}/Kg</p>
+      <p>{description}</p>
+      <p>{inStock ? "In Stock" : "Out of Stock"}</p>
+    </div>
+  );
+}
+//____________________________________________________________________________
+//41.
